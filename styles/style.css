@@ -1,0 +1,296 @@
+@font-face {
+    font-family: font;
+   /* src: url(../font/Avenir.ttc);*/
+    src: url('../font/AvenirLTStd-Book.eot');
+	src: url('../font/AvenirLTStd-Book.woff') format('woff'), url('../fonts/AvenirLTStd-Book.ttf') format('truetype'), url('../font/AvenirLTStd-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+body{
+	font-family: font;
+	color: #FFFFFF;
+}
+
+.section{
+	width: 100vw;
+	height: 100vh;
+}
+/*INTRO*/
+.intro{
+	background-color: #211e27;
+	background-image: url('../img/cover.png');
+	background-position: bottom right;
+	background-size: 60%;
+	background-repeat: no-repeat;
+}
+
+.intro .content{
+	position: relative;
+	left: 160px;
+
+}
+.intro .content h1{
+	font-size: 35px;
+	letter-spacing: 2.2px;
+}
+.intro .content h1::after{
+	content:"";
+	display: inline-block;
+	width: 50px;
+	height: 5px;
+	background-color: #48649d;
+	position: relative;
+    left: 20px;
+    bottom: 5px;
+}
+
+.intro .content h2{
+	font-size: 18px; 
+	letter-spacing: 1.1px;
+	position: relative;
+	bottom: 20px;
+}
+
+.intro .content .descr{
+	width: 520px;
+	font-weight: 100;
+}
+
+.intro .links{
+	padding-left: 0;
+}
+.intro .links .notfirst::before{
+	content:"";
+	display: inline-block;
+	width: 10px;
+	height: 2px;
+	background-color: #48649d;
+	position: relative;
+    bottom: 5px;
+    right: 15px;
+}
+
+.intro .next{
+	position: absolute;
+	left: calc(50% - 50px);
+	text-align: center;
+	bottom: 0;
+	width: 100px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.intro .next .fa-angle-down{
+	position: relative;
+	top: 0px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.intro .next:hover .fa-angle-down{
+	top: 5px;
+
+}
+
+
+.intro .links li{
+	display: inline-block;
+	list-style:none;
+	margin-right: 30px;
+}
+.intro .links li a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+
+/*PROJECTS*/
+.projects{
+	background-color: #211e27;
+}
+.project .expl{
+	display: block;
+	position: absolute;
+	left: 10px;
+	opacity: 0;
+	width: 90%;
+	height: 100%;
+	left: 3
+	0px;
+	top: 20px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.project .expl.visible{
+	opacity: 1;
+	left: 20px;
+}
+.project .expl a{
+	position: absolute;
+	bottom: 40px;
+	right: 0;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+.project{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+
+}
+
+.projects .container{
+	width: 70%;
+	top: 10%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+.project .moreinfo{
+	text-decoration: none;
+	color:#FFF;
+	display: block;
+	max-width: 50%;
+	font-size: 10px;
+	text-align: center;
+	position: absolute;
+	font-weight: bold;
+	opacity: 0;
+	top: calc(50% - 25px) ;
+	left: calc(50% - 25px);
+	width: 50px;
+	height: 50px;
+	border-radius:50px;
+	border: 2px solid white;
+	z-index: 10;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.project .moreinfo p{
+	position: relative;
+	top: 2px
+}
+
+.project::before{
+	display: inline-block;
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.project:hover{
+
+}
+.project:hover:before{
+	opacity: 0.9;
+}
+.project .moreinfo.visible{
+	opacity: 1;
+}
+
+
+.projects .lsdc{
+	background-color: #292c44;
+	background-image: url("../img/lsdc.png");
+	background-repeat: no-repeat;
+	background-size: 80%;
+	background-position: center;
+	position: relative;
+	width: 46%;
+	height: 500px;
+	float: left;
+	margin-right: 25px;
+}
+
+.projects .jeanmich{
+	background-color: #efc94c;
+	background-image: url("../img/jeanmich.png");
+	background-repeat: no-repeat;
+	background-size: 50%;
+	background-position: center;
+	width: 49%;
+	height: 240px;
+	position: relative;
+	float:left;
+	margin-left: 5px;
+	margin-bottom: 10px;
+
+}
+.projects .trophy{
+	background-image: url("../img/bettrophy.jpg");
+	background-repeat: no-repeat;
+	background-size: 130%;
+	background-position: center;
+	width:49%;
+	height: 240px;
+	position: relative;
+	float:left;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+
+
+.projects .project{
+	
+}
+.projects .project .cover{
+	width: 60%;
+
+}
+.projects .project .cover .moreinfo{
+	display: none;
+}
+
+.projects .project .cover:hover .moreinfo{
+	display: block;
+}
+
+
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (max-width: 860px){
+  .project{
+    width: 100% !important;
+    margin-left: 0px !important;
+    margin-top: 0px!important; 
+    margin-bottom: 5px !important;
+    height: 33% !important;
+
+  }
+  .container{
+  	width: 60% !important;
+  	top: 0% !important;
+    height: 80% !important;
+  }
+  .lsdc{
+  	background-size: 30% !important;
+  	font-size: 13px !important;
+  }
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
